@@ -1,11 +1,11 @@
 import VIPUpgrade from "./VIPUpgrade";
-import RiskFree from "./RiskFree";
+import FreeVsVip from "./FreeVsVip";
 
 export default function VIPPage() {
   return (
     <>
       <VIPUpgrade />
-      <RiskFree />
+      <FreeVsVip />
     </>
   );
 }
