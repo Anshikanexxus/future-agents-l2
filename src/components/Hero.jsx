@@ -1,7 +1,16 @@
 export default function Hero() {
   return (
     <section className="hero">
+
+      {/* Future Agents Logo */}
+      <img
+        src="/logo.png"
+        alt="Future Agents"
+        className="hero-logo"
+      />
+
       <div className="hero-content">
+
         <div className="hero-badge">
           <span className="hero-badge-dot"></span>
           Live Cohort · Saturday, Aug 29, 2026 · 11 AM IST
@@ -24,37 +33,63 @@ export default function Hero() {
         </p>
 
         <div className="hero-stats">
+
+          {/* 25,000+ Builders */}
           <div className="hero-stat">
-            <span className="hero-stat-icon">🧑‍🤝‍🧑</span>
+            <img
+              src="/builders-icon.png"
+              alt=""
+              className="hero-stat-icon"
+            />
+
             <div>
               <strong>25,000+</strong>
               <span>Builders trained</span>
             </div>
           </div>
 
+          {/* Ratan Tata Award */}
           <div className="hero-stat">
-            <span className="hero-stat-icon">🏆</span>
+            <img
+              src="/award-icon.png"
+              alt=""
+              className="hero-stat-icon"
+            />
+
             <div>
               <strong>Ratan Tata</strong>
               <span>Business Excellence Awardee</span>
             </div>
           </div>
 
+          {/* Reviews */}
           <div className="hero-stat">
-            <span className="hero-stat-icon">⭐</span>
+            <img
+              src="/reviews-icon.png"
+              alt=""
+              className="hero-stat-icon"
+            />
+
             <div>
               <strong>4.8/5</strong>
               <span>(16,000+ reviews)</span>
             </div>
           </div>
 
+          {/* Zero Coding */}
           <div className="hero-stat">
-            <span className="hero-stat-icon">🚫</span>
+            <img
+              src="/no-code-icon.png"
+              alt=""
+              className="hero-stat-icon"
+            />
+
             <div>
               <strong>Zero coding</strong>
               <span>Required</span>
             </div>
           </div>
+
         </div>
 
         <a href="#seat" className="hero-button">
@@ -70,6 +105,7 @@ export default function Hero() {
         <a href="#curriculum" className="hero-bottom-link">
           See everything you'll build <span>↓</span>
         </a>
+
       </div>
     </section>
   );

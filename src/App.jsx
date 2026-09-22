@@ -7,7 +7,6 @@ import Mentor from "./components/Mentor";
 import SeatIncludes from "./components/SeatIncludes";
 import FAQ from "./components/FAQ";
 import FinalCTA from "./components/FinalCTA";
-import RiskFree from "./components/RiskFree";
 import VIPPage from "./pages/Second_vip";
 
 function HomePage() {
@@ -20,7 +19,6 @@ function HomePage() {
       <SeatIncludes />
       <FAQ />
       <FinalCTA />
-      <RiskFree />
     </>
   );
 }

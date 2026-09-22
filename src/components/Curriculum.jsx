@@ -109,7 +109,7 @@ export default function Curriculum() {
           <p className="curriculum-label">CURRICULUM</p>
 
           <h2>
-            The complete 2-day build schedule
+            The complete <span className="two-day">2-day</span> build schedule
           </h2>
         </div>
 
