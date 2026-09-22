@@ -34,6 +34,7 @@ select {
   width: 100%;
   overflow: hidden;
 
+  /* Desktop + Tablet */
   background-image: url("/hero-background.png");
   background-size: cover;
   background-position: center right;
@@ -78,7 +79,6 @@ select {
 .hero-badge {
   display: inline-flex;
   align-items: center;
-
   gap: 10px;
 
   padding: 9px 16px;
@@ -308,12 +308,12 @@ select {
   .hero {
     padding: 36px 0 44px;
 
-    background-position: 65% center;
+    /* MOBILE BACKGROUND */
+    background-image: url("/mobile-hero-background-mage.png");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
   }
-
-  .hero-title {
-  max-width: 340px;
-}
 
   /* Keeps text readable over background */
 
@@ -342,12 +342,14 @@ select {
     right: 20px;
   }
 
-  /* CONTENT */
+  /* CONTENT
+     Extra top space prevents the logo
+     from overlapping the badge/title */
 
   .hero-content {
     width: 100%;
 
-    padding: 0 20px;
+    padding: 155px 20px 0;
   }
 
   /* BADGE */
@@ -404,6 +406,17 @@ select {
 ========================================= */
 
 @media (max-width: 420px) {
+
+  .hero-logo {
+    width: 120px;
+    top: 20px;
+    right: 16px;
+  }
+
+  /* Slightly less space because logo is smaller */
+  .hero-content {
+    padding-top: 135px;
+  }
 
   .hero-stats {
     grid-template-columns: 1fr;
