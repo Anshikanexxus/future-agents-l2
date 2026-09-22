@@ -2,31 +2,31 @@ import { useEffect, useRef, useState } from "react";
 
 const audiences = [
   {
-    icon: "👨‍💼",
+    icon: "/working-professionals.png",
     title: "Working professionals & IT folks",
   },
   {
-    icon: "🚀",
+    icon: "/ai-founders.png",
     title: "Aspiring AI agency / AI startup founders",
   },
   {
-    icon: "🏬",
+    icon: "/small-business-owners.png",
     title: "Small business owners",
   },
   {
-    icon: "👨‍💻",
+    icon: "/developers.png",
     title: "Developers",
   },
   {
-    icon: "👨‍💻",
+    icon: "/students-graduates.png",
     title: "Students & fresh graduates",
   },
   {
-    icon: "💻",
+    icon: "/freelancers-agency-owners.png",
     title: "Freelancers & agency owners",
   },
   {
-    icon: "🏬",
+    icon: "/coaches-consultants-solopreneurs.png",
     title: "Coaches, consultants & solopreneurs",
   },
 ];
@@ -81,7 +81,11 @@ export default function Audience() {
               }
             >
               <span className="audience-icon">
-                {item.icon}
+                <img
+                  src={item.icon}
+                  alt=""
+                  className="audience-icon-image"
+                />
               </span>
 
               <span className="audience-title">

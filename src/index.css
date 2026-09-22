@@ -424,6 +424,13 @@ select {
   padding: 64px 0 60px;
 }
 
+.audience-icon-image {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: contain;
+}
+
 .audience-container {
   width: min(1120px, calc(100% - 80px));
   margin: 0 auto;
